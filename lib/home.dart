@@ -59,7 +59,7 @@ class Home extends StatelessWidget {
             ),
             Flexible(
               child: Padding(
-                padding: const EdgeInsets.all(20),
+                padding: const EdgeInsets.all(0),
                 child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: const [
@@ -81,7 +81,7 @@ class Home extends StatelessWidget {
             ),
             Flexible(
               child: Padding(
-                padding: const EdgeInsets.all(20),
+                padding: const EdgeInsets.all(10),
                 child: Container(
                   decoration: BoxDecoration(
                       color: Colors.white,
@@ -100,33 +100,55 @@ class Home extends StatelessWidget {
                 ),
               ),
             ),
-            Flexible(
-              child: Container(
-                  color: Colors.white,
-                  width: double.infinity,
-                  child: Padding(
-                    padding: const EdgeInsets.all(10),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text("Shopping"),
-                        Text("Shopping"),
-                        Text("Shopping"),
-                        Row(
-                          children: [
-                            Icon(Icons.access_time_outlined),
-                            Text(
-                              "Delivery Today, 12:00-1:00pm ",
-                              style: TextStyle(fontSize: 18),
-                            )
-                           ],
-                        )
-                      ],
+            Container(
+                color: Colors.white,
+                width: double.infinity,
+                child: Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(10),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text("Shopping"),
+                          SizedBox(height: 10,),
+                          Text("Shopping"),
+                          SizedBox(height: 10,),
+                          Text("Shopping"),
+                          SizedBox(height: 10,),
+                          Row(
+                            children: [
+                              Icon(Icons.access_time_outlined),
+                              Text(
+                                "Delivery Today, 12:00-1:00pm ",
+                                style: TextStyle(fontSize: 18),
+                              )
+                             ],
+                          )
+                        ],
+                      ),
                     ),
-                  )
+                    Container(
+                      color: Colors.black,
+                      width: double.infinity,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: const [
+                          Text(
+                            "Rubies sfsdfs sfsdfsd sfsdfsdb dfsdgsdb dfgdf dgdf hefhgdf rb gfsf dgsf dgf rgfsebe dgdfbdv dhdfb...",
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w600),
+                          ),
+                        ],
+                      ),
+                    ),
 
-              ),
+                  ],
+                )
+
             ),
 
           ],
